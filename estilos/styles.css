@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    
+   
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      height: 720px;
+       margin-bottom: 40px;
+       background-color: rgb(176, 176, 176);
+        
+    }
+
+    
+    #gridArea { 
+        display: grid;
+        grid-template-areas: 
+        "headerNav"
+        "servicios"
+        "pieRedes"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 2fr 2fr;
+        row-gap: 1%;
+    }
+   header {
+grid-area: headerNav;
+   }
+div {
+    grid-area: servicios;
+}
+footer {
+    grid-area: pieRedes;
+}
+    header {
+   
+    padding: 50px;
+
+}
+    
+nav {
+        
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+       
+    }
+
+    .logo {
+        width: 30%;
+        margin-left: 0%;
+    }
+
+    .imglogo { width: 40%;
+
+    }
+
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        background-color:rgb(211, 201, 201);
+        padding: 0.5rem;
+        border-radius: 1rem;
+        margin: 0 10px 0 10px ;
+    }
+    a{
+     color: black;
+     text-decoration: none;
+    }
+
+
+div {
+    display: flex;
+    flex-direction:column;
+    height: 90%;
+}
+
+.fondo {
+    height: 500px;
+    width: 1500px;
+    padding: 0 5px 5px 0;
+}
+
+
+ aside {
+    
+    
+     padding: 30px;
+     
+ }
+
+ section {
+    padding: 30px;
+    }
+
+
+ footer {
+    
+  
+ 
+  display: flex;
+  text-align: center;
+
+ }
+
+   /*celular*/
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 2rem;
+    }
+    nav {
+flex-direction: column;
+    }
+    ul {
+flex-direction: column;
+    }
+    
+}
+
+
+/*Tablet*/
+ @media only screen and (min-width: 485px) and (max-width: 1023px) {
+    
+     nav {
+        flex-direction: column;
+         }
+           
+         ul {
+        flex-direction: column;
+        
+            }
+}
+
+
+            
