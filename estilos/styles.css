@@ -110,7 +110,7 @@ div {
  }
 
    /*celular*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
     body {
         font-size: 2rem;
     }
@@ -125,7 +125,7 @@ flex-direction: column;
 
 
 /*Tablet*/
- @media only screen and (min-width: 485px) and (max-width: 1023px) {
+ @media only screen and (max-width: 768px){
     
      nav {
         flex-direction: column;
